@@ -1,0 +1,211 @@
+.nbar{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 130px;
+    margin-right: 130px;
+    background-color: white;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    font-size: medium;   
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    
+ 
+    
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(0,0,128);;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+.cart{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 20px;
+    margin-left: 130px;
+    margin-right: 130px;
+    margin-top: 60px;
+    padding: 30px;
+
+}
+.nbelem{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 7px;
+}
+.titre{
+    display: flex;
+    flex-direction: row;
+    font-size: 22px;
+    justify-content: center;
+    color: rgb(8, 122, 24);
+}
+.cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+}
+.par{
+    font-size: 23px;
+    color: rgb(0,0,128);
+    text-align:left ;
+    
+}
+
+/*****carrousel 3d automatique*****/
+
+*{box-sizing : border-box}
+
+img{max-width:100%}
+
+.contenu_carou_auto{
+
+margin:2rem auto;
+width:420px;
+height:279px;
+perspective:8000px
+	
+	}
+		
+.caroussel-image{
+	
+animation:rotation 24s infinite alternate linear;	
+transform-style:preserve-3d;
+position:relative;	
+
+}
+
+.caroussel-image img{
+	
+position: absolute;
+top:0;
+left: 0;
+	
+	
+	}
+
+
+		
+.caroussel-image img{
+	
+filter:drop-shadow(0 12px 5px hsla(0,0%,0%,.4));
+width:400px;
+height:266px;
+left:10px;
+outline:1px solid transparent;
+backface-visibility:hidden
+	
+	}
+		
+.caroussel-image img:nth-child(1){
+	
+transform:translate3d(0,0,495px)
+		
+		}
+		
+.caroussel-image img:nth-child(2){
+	
+transform:rotateY(45deg) translateZ(495px)
+	
+		}
+		
+.caroussel-image img:nth-child(3){
+	
+	transform:rotateY(90deg) translateZ(495px)
+	
+	}
+	
+.caroussel-image img:nth-child(4){
+	
+	transform:rotateY(135deg) translateZ(495px)
+	
+	}
+	
+.caroussel-image img:nth-child(5){
+	
+	transform:rotateY(180deg) translateZ(495px)
+	
+	}
+	
+.caroussel-image img:nth-child(6){
+	
+	transform:rotateY(225deg) translateZ(495px)
+	
+	}
+	
+.caroussel-image img:nth-child(7){
+	
+	transform:rotateY(270deg) translateZ(495px)
+	
+	}
+	
+.caroussel-image img:nth-child(8){
+	
+	transform:rotateY(315deg) translateZ(495px)
+	
+	}
+
+	
+
+	
+@keyframes rotation{
+from{transform:rotatey(0)}
+to{transform:rotatey(1turn)}}
+	
+/*****fin carrousel 3d automatique*****/
+
+
+.abc{
+    margin-left: 130px;
+    margin-right: 130px;
+    margin-bottom: 40px;
+}
+.pr{
+    color: rgb(0,0,128);
+    font-size: 22px;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.quest{
+    color: rgb(8, 122, 24);
+    font-size: 22px;
+}
+.ans{
+    color: rgb(0,0,128);
+    font-size: 22px;
+}
